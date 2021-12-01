@@ -30,10 +30,10 @@ def Calculator():
     first_number = input("what is your first number?: ")
     second_number = input("\nwhat is your second number?: ")
     operation = input("\nwhat operation do you want? D|M|S|A: ")
-    if not first_number.isnumeric():
+    if not first_number.replace(".", "").isnumeric():
         print('Error: The first number must be numeric!')
         Calculator()
-    if not second_number.isnumeric():
+    if not second_number.replace(".", "").isnumeric():
         print('Error: The second number must be numeric!')
         Calculator()
     if operation.lower() == "d":
