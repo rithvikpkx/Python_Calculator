@@ -1,3 +1,2 @@
-This is a calculator.
-There is also some other testing files that no one cares about.
+This is a calculator made with Python. It was pretty easy to make in hindsight, but I spent a long time coding it.
 The End.
