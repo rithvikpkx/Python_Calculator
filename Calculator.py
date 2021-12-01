@@ -48,9 +48,6 @@ def Calculator():
     if operation.lower() == "a":
         x = False
         print('The solution is: ' + (str(float(first_number) + float(second_number))))
-    if operation.isnumeric():
-        print('Error: The operation must be a letter.')
-        Calculator()
     if x:
         print("Error: The operation must be either D|M|S|A")
         Calculator()
