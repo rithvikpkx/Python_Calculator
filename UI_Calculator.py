@@ -19,7 +19,6 @@ def clear():
 def equal():
     global expression
 
-    # noinspection PyBroadException
     try:
 
         total = str(eval(expression))
