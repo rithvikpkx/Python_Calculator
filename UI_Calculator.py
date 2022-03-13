@@ -19,6 +19,7 @@ def clear():
 def equal():
     global expression
 
+    # noinspection PyBroadException
     try:
 
         total = str(eval(expression))
@@ -26,6 +27,7 @@ def equal():
         expression = total
 
     except:
+
         equation.set(" ERROR ")
         expression = ""
 
@@ -66,6 +68,6 @@ Button(calculator, text=" * ", font=(BOLD, 16), height=2, width=12, command=lamb
 Button(calculator, text=" / ", font=(BOLD, 16), height=2, width=12, command=lambda: press("/")).grid(row=5, column=0,
                                                                                                      pady=5)
 Button(calculator, text=" = ", font=(BOLD, 16), height=2, width=12, command=equal).grid(row=5, column=1,
-                                                                                                     pady=5)
+                                                                                        pady=5)
 Button(calculator, text=" CLEAR ", font=(BOLD, 16), height=3, width=12, command=clear).grid(row=6, column=1, pady=5)
 calculator.mainloop()
