@@ -23,7 +23,7 @@ def equal():
 
         total = str(eval(expression))
         equation.set(total)
-        expression = ""
+        expression = total
 
     except:
         equation.set(" ERROR ")
@@ -65,7 +65,7 @@ Button(calculator, text=" * ", font=(BOLD, 16), height=2, width=12, command=lamb
                                                                                                      pady=5)
 Button(calculator, text=" / ", font=(BOLD, 16), height=2, width=12, command=lambda: press("/")).grid(row=5, column=0,
                                                                                                      pady=5)
-Button(calculator, text=" = ", font=(BOLD, 16), height=2, width=12, command=lambda: press("=")).grid(row=5, column=1,
+Button(calculator, text=" = ", font=(BOLD, 16), height=2, width=12, command=equal).grid(row=5, column=1,
                                                                                                      pady=5)
 Button(calculator, text=" CLEAR ", font=(BOLD, 16), height=3, width=12, command=clear).grid(row=6, column=1, pady=5)
 calculator.mainloop()
