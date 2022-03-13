@@ -32,7 +32,7 @@ def equal():
 
 
 calculator = Tk()
-calculator.title("CALCULATOR")
+calculator.title("RITHVIK'S AWESOME CALCULATOR")
 calculator.iconbitmap("calculator-icon.ico")
 # calculator.configure(bg="#DCE2C8") alternate background color that also looks good.
 calculator.configure(bg="#D3C4D1")
