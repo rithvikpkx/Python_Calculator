@@ -41,12 +41,19 @@ def equal():
 
         expression = ""
 
+def BackSpace():
+
+    global expression
+
+    expression = expression[:-1]
+
+    equation.set(expression)
 
 calculator = Tk()
 
 calculator.title("RITHVIK'S AWESOME CALCULATOR")
 
-calculator.iconbitmap("calculator-icon.ico")
+#calculator.iconbitmap("calculator-icon.ico")
 
 # calculator.configure(bg="#DCE2C8") alternate background color that also looks good.
 
@@ -149,7 +156,7 @@ calculator.bind("*", lambda x: press("*"))
 
 calculator.bind("c", lambda x: clear())
 
-calculator.bind("<BackSpace>", lambda x: clear())
+calculator.bind("<BackSpace>", lambda x: BackSpace())
 
 calculator.bind("<Delete>", lambda x: clear())
 
