@@ -54,7 +54,7 @@ calculator = Tk()
 
 calculator.title("RITHVIK'S AWESOME CALCULATOR")
 
-# calculator.iconbitmap("calculator-icon.ico")
+calculator.iconbitmap("calculator-icon.ico")
 
 # calculator.configure(bg="#DCE2C8") alternate background color that also looks good.
 
