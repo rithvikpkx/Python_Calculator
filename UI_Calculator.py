@@ -56,6 +56,11 @@ calculator.title("RITHVIK'S AWESOME CALCULATOR")
 
 calculator.iconbitmap("calculator-icon.ico")
 
+calculator.geometry(
+        "+" + str(int((calculator.winfo_screenwidth() / 3))) + "+" + str(int((calculator.winfo_screenheight() / 3))))
+
+calculator.resizable(False, False)
+
 # calculator.configure(bg="#DCE2C8") alternate background color that also looks good.
 
 calculator.configure(bg="#D3C4D1")
