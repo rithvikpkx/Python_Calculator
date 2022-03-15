@@ -6,7 +6,6 @@ expression = ""
 
 
 def press(num):
-
     global expression
 
     expression = expression + str(num)
@@ -15,7 +14,6 @@ def press(num):
 
 
 def clear():
-
     global expression
 
     expression = ""
@@ -24,16 +22,13 @@ def clear():
 
 
 def equal():
-
     global expression
 
     try:
 
         total = str(eval(expression))
 
-
         if total[-2:] == ".0":
-
             total = total[:-2]
 
         equation.set(total)
@@ -46,19 +41,20 @@ def equal():
 
         expression = ""
 
-def BackSpace():
 
+def backspace():
     global expression
 
     expression = expression[:-1]
 
     equation.set(expression)
 
+
 calculator = Tk()
 
 calculator.title("RITHVIK'S AWESOME CALCULATOR")
 
-#calculator.iconbitmap("calculator-icon.ico")
+# calculator.iconbitmap("calculator-icon.ico")
 
 # calculator.configure(bg="#DCE2C8") alternate background color that also looks good.
 
@@ -161,7 +157,7 @@ calculator.bind("*", lambda x: press("*"))
 
 calculator.bind("c", lambda x: clear())
 
-calculator.bind("<BackSpace>", lambda x: BackSpace())
+calculator.bind("<BackSpace>", lambda x: backspace())
 
 calculator.bind("<Delete>", lambda x: clear())
 
