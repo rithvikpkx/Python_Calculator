@@ -31,6 +31,11 @@ def equal():
 
         total = str(eval(expression))
 
+
+        if total[-2:] == ".0":
+
+            total = total[:-2]
+
         equation.set(total)
 
         expression = total
