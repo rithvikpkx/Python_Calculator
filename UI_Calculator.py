@@ -115,14 +115,14 @@ Button(calculator, text=" . ", font=(BOLD, 16), bg="#EB8A90", activebackground="
 Button(calculator, text=" / ", font=(BOLD, 16), bg="#EB8A90", activebackground="#d66b74", fg="black", height=2,
        width=12, command=lambda: press("/")).grid(row=5, column=0)
 
-Button(calculator, text=" = ", font=(BOLD, 16), bg="#EB8A90", activebackground="#d66b74", fg="black", height=2,
+Button(calculator, text=" = ", font=(BOLD, 16), bg="#EB8A90", activebackground="#d66b74", fg="black", height=3,
        width=12, command=equal).grid(row=6, column=0, )
 
-Button(calculator, text=" BACKSPACE ", font=(BOLD, 16), bg="#EB8A90", activebackground="#d66b74", fg="black", height=2,
+Button(calculator, text=" BACKSPACE ", font=(BOLD, 16), bg="#EB8A90", activebackground="#d66b74", fg="black", height=3,
        width=12, command=backspace).grid(row=6, column=1, )
 
-Button(calculator, text=" CLEAR ", font=(BOLD, 16), bg="#EB8A90", activebackground="#d66b74", fg="black", height=2,
-       width=12, command=clear).grid(row=6, column=2)
+Button(calculator, text=" CLEAR ", font=(BOLD, 16), bg="#EB8A90", activebackground="#d66b74", fg="black", height=3,
+       width=12, command=clear).grid(row=6, column=2, pady=10)
 
 calculator.bind("7", lambda x: press(7))
 
