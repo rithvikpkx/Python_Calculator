@@ -160,6 +160,8 @@ calculator.bind("<Delete>", lambda x: clear())
 
 calculator.bind("<Return>", lambda x: equal())
 
+calculator.bind("=", lambda x: equal())
+
 calculator.bind("0", lambda x: press(0))
 
 calculator.mainloop()
