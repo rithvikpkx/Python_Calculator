@@ -67,7 +67,7 @@ calculator.configure(bg="#D3C4D1")
 
 equation = StringVar()
 
-Entry(calculator, textvariable=equation, width=50, state=DISABLED, disabledbackground="#A2AEBB",
+Entry(calculator, textvariable=equation, width=49, state=DISABLED, disabledbackground="#A2AEBB",
       disabledforeground="black", font=BOLD).grid(row=0, column=0, columnspan=3, padx=5, pady=12)
 
 Button(calculator, text=" 7 ", font=(BOLD, 16), bg="#EB8A90", activebackground="#d66b74", fg="black", height=2,
