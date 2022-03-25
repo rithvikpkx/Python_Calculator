@@ -37,9 +37,12 @@ def equal():
 
     except:
 
-        equation.set(" ERROR ")
+        if expression == "":
+            equation.set("")
 
-        expression = ""
+        else:
+            equation.set(" ERROR ")
+            expression = ""
 
 
 def backspace():
@@ -116,12 +119,13 @@ Button(calculator, text=" / ", font=(BOLD, 16), bg="#EB8A90", activebackground="
        width=12, command=lambda: press("/")).grid(row=5, column=0)
 
 Button(calculator, text=" = ", font=(BOLD, 16), bg="#EB8A90", activebackground="#d66b74", fg="black", height=2,
-       width=12, command=equal).grid(row=6, column=0, )
+       width=12, command=equal).grid(row=6, column=0)
 
-Button(calculator, text=" BACKSPACE ", font=(BOLD, 16), bg="#EB8A90", activebackground="#d66b74", fg="black", height=2,
-       width=12, command=backspace).grid(row=6, column=1, )
+backspace_image = PhotoImage(file="backspace.png")
 
-Button(calculator, text=" CLEAR ", font=(BOLD, 16), bg="#EB8A90", activebackground="#d66b74", fg="black", height=2,
+Button(calculator, image=backspace_image,bg="#EB8A90", activebackground="#d66b74", command=backspace).grid(row=6, column=1, ipadx=39, ipady=6)
+
+Button(calculator, text=" C ", font=(BOLD, 16), bg="#EB8A90", activebackground="#d66b74", fg="black", height=2,
        width=12, command=clear).grid(row=6, column=2)
 
 calculator.bind("7", lambda x: press(7))
