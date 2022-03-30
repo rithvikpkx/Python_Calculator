@@ -55,7 +55,7 @@ def backspace():
 
 calculator = Tk()
 
-calculator.title("RITHVIK'S AWESOME CALCULATOR")
+calculator.title("MY AWESOME CALCULATOR")
 
 calculator.iconbitmap("calculator-icon.ico")
 
