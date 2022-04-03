@@ -1,2 +1,2 @@
-Username: -test username-
-Password: -test password-
+Username: --
+Password: --
