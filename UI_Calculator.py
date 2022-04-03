@@ -123,7 +123,10 @@ Button(calculator, text=" = ", font=(BOLD, 16), bg="#EB8A90", activebackground="
 
 backspace_image = PhotoImage(file="backspace.png")
 
-Button(calculator, image=backspace_image,bg="#EB8A90", activebackground="#d66b74", command=backspace).grid(row=6, column=1, ipadx=39, ipady=6)
+Button(calculator, image=backspace_image, bg="#EB8A90", activebackground="#d66b74", command=backspace).grid(row=6,
+                                                                                                            column=1,
+                                                                                                            ipadx=39,
+                                                                                                            ipady=6)
 
 Button(calculator, text=" C ", font=(BOLD, 16), bg="#EB8A90", activebackground="#d66b74", fg="black", height=2,
        width=12, command=clear).grid(row=6, column=2)
