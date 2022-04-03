@@ -12,8 +12,6 @@ def press(num):
 
     equation.set(expression)
 
-test = "this is a test"
-
 def clear():
     global expression
 
